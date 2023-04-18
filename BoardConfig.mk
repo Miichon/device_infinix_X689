@@ -178,3 +178,12 @@ PLATFORM_VERSION := 20.1.0
 
 # Hack to get keymaster to recognize the key files
 VENDOR_SECURITY_PATCH := 2021-08-01
+
+# PBRP Flags
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
+PB_GO := TRUE
+
+# PB Torch
+PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
+PB_TORCH_MAX_BRIGHTNESS := 1
