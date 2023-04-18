@@ -153,7 +153,6 @@ TW_INCLUDE_RESETPROP := true
 TW_USE_TOOLBOX := true
 TW_EXCLUDE_PYTHON := true
 TW_EXCLUDE_NANO := true
-TW_ENABLE_FS_COMPRESSION := true
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_NTFS_3G := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
@@ -182,7 +181,6 @@ VENDOR_SECURITY_PATCH := 2021-08-01
 # PBRP Flags
 PB_DISABLE_DEFAULT_DM_VERITY := true
 PB_DISABLE_DEFAULT_TREBLE_COMP := true
-PB_GO := TRUE
 
 # PB Torch
 PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
