@@ -14,22 +14,21 @@ on post-fs
     start mtk.plpath.utils.link
 
 on fs
-    mkdir /mnt/vendor 0700 root root
-    mkdir /mnt/vendor/protect_f 0700 root root
-    mkdir /mnt/vendor/protect_s 0700 root root
-    mkdir /mnt/vendor/nvdata 0700 root root
-    mkdir /mnt/vendor/nvcfg 0700 root root
-    mkdir /mnt/vendor/persist 0700 root root
-    mount ext4 /dev/block/by-name/protect1 /mnt/vendor/protect_f
-    mount ext4 /dev/block/by-name/protect2 /mnt/vendor/protect_s
-    mount ext4 /dev/block/by-name/nvdata /mnt/vendor/nvdata
-    mount ext4 /dev/block/by-name/nvcfg /mnt/vendor/nvcfg
-    mount ext4 /dev/block/by-name/persist /mnt/vendor/persist
-    symlink /mnt/vendor/protect_f /protect_f
-    symlink /mnt/vendor/protect_s /protect_s
-    symlink /mnt/vendor/nvcfg /nvcfg
-    symlink /mnt/vendor/nvdata /nvdata
-    symlink /mnt/vendor/persist /persist
+    mkdir /protect_f 0700 root root
+    mkdir /protect_s 0700 root root
+    mkdir /nvdata 0700 root root
+    mkdir /nvcfg 0700 root root
+    mkdir /persist 0700 root root
+    mount ext4 /dev/block/by-name/protect1 /protect_f
+    mount ext4 /dev/block/by-name/protect2 /protect_s
+    mount ext4 /dev/block/by-name/nvdata /nvdata
+    mount ext4 /dev/block/by-name/nvcfg /nvcfg
+    mount ext4 /dev/block/by-name/persist /persist
+    symlink /protect_f /vendor/protect_f
+    symlink /protect_s /vendor/protect_s
+    symlink /nvcfg /vendor/nvcfg
+    symlink /nvdata /vendor/nvdata
+    symlink /persist /vendor/persist
 
     install_keyring
 
