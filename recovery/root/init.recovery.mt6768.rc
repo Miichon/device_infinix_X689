@@ -25,10 +25,10 @@ on fs
     mount ext4 /dev/block/by-name/nvdata /mnt/vendor/nvdata
     mount ext4 /dev/block/by-name/nvcfg /mnt/vendor/nvcfg
     mount ext4 /dev/block/by-name/persist /mnt/vendor/persist
-    symlink /mnt/vendor/protect_f /vendor/protect_f
-    symlink /mnt/vendor/protect_s /vendor/protect_s
-    symlink /mnt/vendor/nvcfg /vendor/nvcfg
-    symlink /mnt/vendor/nvdata /vendor/nvdata
+    symlink /mnt/vendor/protect_f /protect_f
+    symlink /mnt/vendor/protect_s /protect_s
+    symlink /mnt/vendor/nvcfg /nvcfg
+    symlink /mnt/vendor/nvdata /nvdata
 
     install_keyring
 
