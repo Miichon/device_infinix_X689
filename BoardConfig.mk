@@ -169,6 +169,8 @@ TW_FRAMERATE := 60
 # Maintainer/Version
 TW_DEVICE_VERSION := Nomercy
 
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+
 # logcd
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
