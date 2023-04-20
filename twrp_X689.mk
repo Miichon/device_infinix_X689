@@ -28,11 +28,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, device/infinix/X689/device.mk)
 
 # Inherit some common Twrp stuff.
-$(call inherit-product, vendor/pb/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := X689
-PRODUCT_NAME := omni_X689
+PRODUCT_NAME := twrp_X689
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Hot 10S
 PRODUCT_MANUFACTURER := Infinix
