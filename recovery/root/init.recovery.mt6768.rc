@@ -29,7 +29,6 @@ on fs
     symlink /protect_s /mnt/vendor/protect_s
     symlink /nvcfg /mnt/vendor/nvcfg
     symlink /nvdata /mnt/vendor/nvdata
-    symlink /persist /mnt/vendor/persist
     
     install_keyring
 
