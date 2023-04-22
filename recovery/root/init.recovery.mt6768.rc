@@ -14,10 +14,6 @@ on post-fs
     start mtk.plpath.utils.link
 
 on fs
-    mkdir /tmp/misc 0700 root root
-    mkdir /tmp/misc/keystore 0700 root root
-    mkdir /tmp/misc/keystore/user_0 0700 root root
-    symlink /tmp/misc/keystore/user_0 /data/misc/keystore/user_0
     
     install_keyring
 
