@@ -14,12 +14,6 @@ on post-fs
     start mtk.plpath.utils.link
 
 on fs
-    mkdir /mnt/vendor 0700 root root
-    mkdir /mnt/vendor/protect_f 0700 root root
-    mkdir /mnt/vendor/protect_s 0700 root root
-    mkdir /mnt/vendor/nvdata 0700 root root
-    mkdir /mnt/vendor/nvcfg 0700 root root
-    mkdir /mnt/vendor/persist 0700 root root
     
     install_keyring
 
