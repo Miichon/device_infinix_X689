@@ -87,7 +87,7 @@ BOARD_ROOT_EXTRA_FOLDERS += metadata
 # AVB
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
-BOARD_AVB_VBMETA_SYSTEM := system system_ext product
+BOARD_AVB_VBMETA_SYSTEM := system product
 BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
@@ -129,7 +129,6 @@ AB_OTA_UPDATER := true
 # Workaround for copying error vendor files to recovery ramdisk
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_VENDOR := vendor
-TARGET_COPT_OUT_SYSTEM_EXT := system_ext
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
